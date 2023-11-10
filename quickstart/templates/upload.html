@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <h1>Upload Files:</h1>
+    <form action="{{ url_for('upload') }}" enctype="multipart/form-data" method="post">
+        <input type="file" name="userfile" />
+        <button id="submit">submit</button>
+    </form>
+</body>
+</html>

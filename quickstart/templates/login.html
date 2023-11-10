@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Login - To get verificated</title>
+  </head>
+
+  <body>
+    {% if name %}
+    <h1>Hello {{ name }}</h1>
+    {% endif %}
+    <form method="post" action="/login">
+      <label for="username"
+        >Username:
+        <input id="username" type="text" name="username" placeholder="USERNAME"
+      /></label>
+      <label for="password"
+        >PASSWORD:
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="PASSWORD"
+      /></label>
+      <button>Submit</button>
+    </form>
+
+    <p>{{ request }}</p>
+
+    <p>{{ config }}</p>
+
+    <p>{{ session }}</p>
+
+    <p>{{ g }}</p>
+
+    <p>{{ get_flashed_messsages }}</p>
+  </body>
+</html>

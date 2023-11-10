@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+form {
+    display: inline-block;
+    width: 800px;
+    border:1px solid #ccc;
+    padding: 12px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+button {
+    appearance: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: #0b58ff;
+    color: #fff;
+    margin: 8px;
+    outline: none;
+    border:none;
+    width: 88px;
+}
+
